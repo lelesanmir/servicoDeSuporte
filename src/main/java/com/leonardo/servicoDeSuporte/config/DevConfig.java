@@ -9,12 +9,12 @@ import org.springframework.context.annotation.Profile;
 import com.leonardo.servicoDeSuporte.services.DBService;
 
 @Configuration
-@Profile("dev")
-public class TestConfig {
+@Profile("test")
+public class DevConfig {
 
 	@Autowired
 	private DBService dbService;
-	
+
 	@Value("${spring.jpa.hibernate.ddl-auto}")
 	private String value;
 
